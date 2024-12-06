@@ -33,10 +33,11 @@
 }
 
 .navigationLinks{
+    width: 90%;
     margin-top: 2rem;
     position: relative;
     display: flex;
-    justify-content: center; 
+    justify-content: space-evenly; 
     align-items: center; 
     flex-direction: row; 
     flex-wrap: nowrap; 

@@ -92,7 +92,6 @@ const ContactMe = () => {
           </div>
           <div data-aos="zoom-in-up"
             data-aos-duration="3000" className={`${contactStyle.navigationLinks}`}>
-
           
           <div >
             <h3>Follow Me</h3>

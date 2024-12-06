@@ -1,0 +1,191 @@
+.zeroOne{
+    content: attr(data-num);
+    font-family: sans-serif;
+    font-weight: 650;
+    font-size: 13em;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: var(--color-gray-11);
+    margin-right: var(--vspace-0_5);
+    position: absolute;
+    opacity: 0.5;
+}
+
+.container{
+  max-width: 90%;
+}
+  
+  .card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    color: #ccc; 
+  }
+  
+  .card .text-body-secondary {
+    color: #888888;
+  }
+
+  .imageAndLinks{
+    position: relative;
+  }
+
+  p{
+    margin-bottom: 0.6rem;
+  }
+
+  .VercelLinks{
+    position: absolute;
+    bottom: 1rem;
+    right: 8rem;
+    border: 3px solid #E78A00;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 6px;
+    padding-top: 4px;
+  }
+
+  .GithubLinks{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: 3px solid #E78A00;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 6px;
+    padding-top: 4px;
+  }
+
+  .GithubLinks:hover{
+    background-color: #E78A00;
+    color: white;
+  }
+
+  .VercelLinks:hover{
+    background-color: #E78A00;
+    color: white;
+  }
+
+  .card {
+    max-width: 25rem;
+    height: auto;
+    background-color: #1b1b1b; 
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    border: 1px solid white;
+  }
+
+.slider-controler{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative !important;
+  margin-top: 1rem;
+  margin: 1rem auto;
+  width: 40%;
+  align-self: center;
+}  
+
+.sliderContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.slider-controler > .swiper-button-prev,
+.slider-controler > .swiper-button-next {
+    color: #E78A00; 
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    z-index: 10;
+}
+
+.slider-controler {
+  --swiper-navigation-size: 2rem; 
+}
+
+
+.slider-controler .swiper-button-prev:hover,
+.slider-controler .swiper-button-next:hover {
+    transform: scale(1.1); 
+}
+
+.slider-controler .swiper-button-prev {
+  left: 0; 
+}
+.slider-controler .swiper-button-next {
+  right: 0; 
+}
+
+.slider-controler > .swiper-pagination {
+  flex-grow: 1; 
+  bottom: 0 !important;
+  top: var(--swiper-pagination-top, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  gap: 5px; 
+}
+
+.slider-controler .swiper-pagination-bullet {
+  background-color: gray !important;
+  opacity: 1 !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.slider-controler .swiper-pagination-bullet-active {
+  background-color: #E78A00 !important;
+}
+.swiper_container{
+  height: 120%;
+}
+
+ @media (max-width: 575.98px){
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden; 
+  }
+
+  .swiper_container{
+    width: 85%;
+    height: 100%;
+  }
+
+  .slider-controler{
+    width: 70%;
+  }
+
+  .slider-controler {
+    --swiper-navigation-size: 1.5rem; 
+  }
+ } 

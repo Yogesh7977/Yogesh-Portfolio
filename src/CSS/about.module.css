@@ -1,0 +1,178 @@
+html, body{
+    max-width: 100%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 90%;
+}
+.zeroOne{
+    content: attr(data-num);
+    font-family: sans-serif;
+    font-weight: 650;
+    font-size: 10em;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: var(--color-gray-11);
+    margin-right: var(--vspace-0_5);
+    position: absolute;
+    opacity: 0.5;
+}
+
+.line1{
+    border: none;
+    height: 30px;
+    background-color: #E78A00;
+    width: 2px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 80px;
+    font-size: larger;
+}
+
+.line1 h4{
+    margin-left: 16px;
+}
+
+li{
+    margin-top: 4em;
+    list-style-type: none;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+.listSkills{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 9vh;
+    background-color: white;
+    border-color: white;
+    border-radius: 4px;
+    color: black;
+    width: auto;
+    flex-wrap: wrap;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(179, 179, 179, 0.1);
+}
+
+.listSkills:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(211, 211, 211, 0.3);
+}
+
+.gridcontainer{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); 
+    gap: 20px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.listSkills svg{
+    align-self: center;
+}
+
+.skillsColumn {
+    margin-left: 0 !important; 
+  }
+
+
+@media (max-width: 768px) {
+
+    .container{
+        margin-top: 4rem !important;
+        width: 90% !important;
+    }
+    .zeroOne {
+        font-size: 8em;
+        width: 100%;
+    }
+
+    .para{
+        font-size: 1rem !important;
+    }
+
+    .EducationSkills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .line1 {
+        margin-right: 30px;
+    }
+
+    .listSkills {
+        height: 7vh;
+        font-size: 0.9em;
+    }
+
+    .skillsColumn {
+        margin-left: 0; /* Remove left margin for tablets and smaller devices */
+      }
+}
+
+@media (max-width:  575.98px) {
+
+    *{
+        margin: 0;
+    }
+    .container{
+        margin-top: 3rem !important;
+        width: 90% !important;
+    }
+    .zeroOne {
+        font-size: 6em;
+    }
+
+    .line1 {
+        margin-right: auto;
+    }
+
+    .para{
+        font-size: 0.7rem !important;
+    }
+
+    .EducationSkills{
+        margin-top: 3rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .listSkills {
+        height: 6vh;
+        font-size: 0.8em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        margin-top: 2em;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    .skillsColumn {
+        margin-left: 0;
+      }
+}

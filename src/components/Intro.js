@@ -1,7 +1,7 @@
 import React from "react";
 import introStyle from "../CSS/intro.module.css";
 import myLogo from "../images/yogesh3.jpg";
-import resume from "../Resume/Yogesh M. Anbhavane CV (4).pdf";
+import resume from "../Resume/Yogesh_ReactJs_Resume1.pdf";
 import { Link } from "react-scroll";
 import { useEffect, useRef } from "react";
 import sound from "../sounds/hoverSound.wav";

@@ -2,7 +2,7 @@ import React from "react";
 import { Element } from "react-scroll";
 import contactStyle from "../CSS/contactMe.module.css";
 import Aos from "aos";
-import resume from "../Resume/Yogesh M. Anbhavane CV (4).pdf";
+import resume from "../Resume/Yogesh_ReactJs_Resume1.pdf";
 import { useEffect, useRef } from "react";
 import sound from "../sounds/hoverSound.wav";
 const ContactMe = () => {
